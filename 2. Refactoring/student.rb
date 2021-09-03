@@ -32,6 +32,8 @@ class Student
       and (@anual_income < ANNUAL_INCOME_POVERTY_LIMIT)
   end
 
+  private
+
   def display_personal_information
     puts "Name: #{ @name } ID: #{ @id }"
     puts "Anual income: #{ @anual_income }"
