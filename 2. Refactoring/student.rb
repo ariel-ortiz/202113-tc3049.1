@@ -24,7 +24,7 @@ class Student
 
   def scholarship_worthy?
     # Nothing reasonable to do if this student has currently no grades.
-    return -1 if @grades.empty?
+    raise 'Student has no grades' if @grades.empty?
 
     # A student is worthy of a scholarship if he/she has good grades and
     # is poor.
