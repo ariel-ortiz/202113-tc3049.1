@@ -56,3 +56,21 @@ end
 10.times { puts enum3.next }
 
 p enum3.take(20)
+
+p a
+p enum.to_a
+enum.rewind
+begin
+  while true
+    puts enum.next
+  end
+rescue StopIteration
+
+end
+
+puts
+
+enum.rewind
+loop do
+  puts enum.next
+end
