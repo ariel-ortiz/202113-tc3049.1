@@ -1,0 +1,4 @@
+{
+  "httpMethod": "POST",
+  "body": "{ \"Author\": \"Michael Crichton\", \"Title\": \"The Lost World\", \"Year\": 1995, \"Note\": \"Good, but not great.\"}"
+}
