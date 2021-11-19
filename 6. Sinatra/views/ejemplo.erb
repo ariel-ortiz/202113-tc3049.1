@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo ERB</title>
+  </head>
+  <body>
+    <img src="/images/noticias.png" />
+    <h1>¡Hola, <%= @nombre %>!</h1>
+    <ul>
+      <% @info.each do |x| %>
+      <li>
+        <%= x['Title'] %> (<%= x['Year'] %>), <%= x['Author'] %>
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
